@@ -59,16 +59,13 @@ function mostrarFilmes(lista) {
     })
 }
 
-mostrarFilmes(filmes)
-function verDetalhes(titulo) {
-    const filme = filmes.find(f => f.titulo === titulo);
+mostrarFilmes(filme);
 
+function verDetalhes(titulo, descricao) {
     Swal.fire({
-        title: filme ? filme.titulo : "Detalhes",
-        text: filme && filme.descricao ? filme.descricao : "Descrição não disponível.",
+        title: titulo,
+        text: descricao,
         icon: "info"
-    }) 
+    });
 }
-
-
 

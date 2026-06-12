@@ -61,14 +61,12 @@ function mostrarSeries(lista) {
     });
 }
 
-mostrarSeries(series);
+mostrarSeries(serie);
 
-function verDetalhes(titulo) {
-    const serie = series.find(s => s.titulo === titulo);
-
+function verDetalhes(titulo, descricao) {
     Swal.fire({
-        title: serie ? serie.titulo : "Detalhes",
-        text: serie && serie.descricao ? serie.descricao : "Descrição não disponível.",
+        title: titulo,
+        text: descricao,
         icon: "info"
     });
 }

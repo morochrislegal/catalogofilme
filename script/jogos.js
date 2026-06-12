@@ -86,12 +86,10 @@ function mostrarJogos(lista) {
 
 mostrarJogos(jogos);
 
-function verDetalhes(titulo) {
-    const jogo = jogos.find(j => j.titulo === titulo);
-
+function verDetalhes(titulo, descricao) {
     Swal.fire({
-        title: jogo ? jogo.titulo : "Detalhes",
-        text: jogo && jogo.descricao ? jogo.descricao : "Descrição não disponível.",
+        title: titulo,
+        text: descricao,
         icon: "info"
     });
 }

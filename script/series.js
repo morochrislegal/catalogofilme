@@ -35,7 +35,7 @@ const series = [
     descricao: "Super-heróis nada convencionais",
 },
 
-
+r
 ]
 
 const listaSeries = document.getElementById("listaSeries");

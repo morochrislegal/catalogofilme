@@ -85,7 +85,7 @@ function mostrarJogos(lista) {
 }
 
 
-mostrarFFilmes(jogos)
+mostrarJogos(jogos)
 function verDetalhes(titulo) {
     const jogos = jogos.find(f => f.titulo === titulo);
 

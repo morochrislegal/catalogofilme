@@ -84,12 +84,15 @@ function mostrarJogos(lista) {
     });
 }
 
-mostrarJogos(jogos);
 
-function verDetalhes(titulo, descricao) {
+mostrarFFilmes(jogos)
+function verDetalhes(titulo) {
+    const jogos = jogos.find(f => f.titulo === titulo);
+
     Swal.fire({
-        title: titulo,
-        text: descricao,
+        title: jogos ? jogos.titulo : "Detalhes",
+        text: jogos && jogos.descricao ? jogos.descricao : "Descrição não disponível.",
         icon: "info"
-    });
+    }) 
 }
+

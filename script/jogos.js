@@ -66,15 +66,15 @@ const listaJogos = document.getElementById("listaJogos");
 function mostrarJogos(lista) {
     listaJogos.innerHTML = "";
 
-    lista.forEach(jogos => {
+    lista.forEach(jogo => {
         listaJogos.innerHTML += `
         <div class="col-md-4">
             <div class="card card-serie h-100">
-                <img src="${jogos.imagem}" class="card-img-top">
+                <img src="${jogo.imagem}" class="card-img-top">
                 <div class="card-body">
-                    <h3>${jogos.titulo}</h3>
-                    <p>${jogos.descricao}</p>
-                    <button class="btn btn-dark" onclick="verDetalhes('${jogos.titulo}')">
+                    <h3>${jogo.titulo}</h3>
+                    <p>${jogo.descricao}</p>
+                    <button class="btn btn-dark" onclick="verDetalhes('${jogo.titulo}')">
                         Ver detalhes
                     </button>
                 </div>
@@ -87,11 +87,11 @@ function mostrarJogos(lista) {
 
 mostrarJogos(jogos)
 function verDetalhes(titulo) {
-    const jogos = jogos.find(f => f.titulo === titulo);
+    const jogoEncontrado = jogos.find(f => f.titulo === titulo);
 
     Swal.fire({
-        title: jogos ? jogos.titulo : "Detalhes",
-        text: jogos && jogos.descricao ? jogos.descricao : "Descrição não disponível.",
+        title: jogoEncontrado ? jogoEncontrado.titulo : "Detalhes",
+        text: jogoEncontrado && jogoEncontrado.descricao ? jogoEncontrado.descricao : "Descrição não disponível.",
         icon: "info"
     }) 
 }

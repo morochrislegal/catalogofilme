@@ -34,11 +34,7 @@ const series = [
     imagem: "https://image.tmdb.org/t/p/w500/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
     descricao: "Super-heróis nada convencionais",
 },
-{
-    titulo: "",
-    imagem:"https://media.tenor.com/OWpSNaTMS58AAAAM/invencible.gif",
-    descricao:"",
-},
+
 
 ]
 

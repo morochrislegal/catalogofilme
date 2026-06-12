@@ -34,21 +34,8 @@ const filmes = [{
     imagem: "https://cinemaweb.com.br/wp-content/uploads/2024/10/carros-4-vai-acontecer.jpg",
     descricao: "Vrummm Vrummm Vrummmmmmmmm",
 },
-{
-    titulo: "",
-    imagem: "https://media.tenor.com/0Ql9ECzdfScAAAAM/no.gif",
-    descricao: "nonono",
-},
-{
-    titulo: "Super Mario Odyssey",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPApul23xDtWBB_fMtGgaio2_mrFk8wwuQUQ&s",
-    descricao: "",
-},
-{
-    titulo: "Apex Legends",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/a/ad/Apex_legends_capa.jpg",
-    descricao: "Battle Royale",
-},
+
+
 ]
 
 

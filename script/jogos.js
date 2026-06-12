@@ -48,6 +48,16 @@ const jogos = [{
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOdn-mat1iV5T4HNZYoWi778Fo08Fm2Hi4Q&s",
     descricao: "é um jogo de terror e ação onde você controla o agente Leon S. Kennedy. Sua missão é salvar Ashley, a filha do presidente dos Estados Unidos.",
 },
+{
+    titulo: "Super Mario Odyssey",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPApul23xDtWBB_fMtGgaio2_mrFk8wwuQUQ&s",
+    descricao: "",
+},
+{
+    titulo: "Apex Legends",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/a/ad/Apex_legends_capa.jpg",
+    descricao: "Battle Royale",
+},
 ]
 
 

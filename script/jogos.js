@@ -87,9 +87,11 @@ function mostrarJogos(lista) {
 mostrarJogos(jogos);
 
 function verDetalhes(titulo) {
+    const jogo = jogos.find(j => j.titulo === titulo);
+
     Swal.fire({
-        title: "titulo",
-        text: "Mais informações da série",
+        title: jogo ? jogo.titulo : "Detalhes",
+        text: jogo && jogo.descricao ? jogo.descricao : "Descrição não disponível.",
         icon: "info"
     });
 }

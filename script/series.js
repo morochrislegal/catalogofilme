@@ -64,9 +64,11 @@ function mostrarSeries(lista) {
 mostrarSeries(series);
 
 function verDetalhes(titulo) {
+    const serie = series.find(s => s.titulo === titulo);
+
     Swal.fire({
-        title: "titulo",
-        text: "Mais informações da série",
+        title: serie ? serie.titulo : "Detalhes",
+        text: serie && serie.descricao ? serie.descricao : "Descrição não disponível.",
         icon: "info"
     });
 }
